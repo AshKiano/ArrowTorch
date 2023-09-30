@@ -1,0 +1,7 @@
+# Permission needed to use the gettorchbow command
+torchbow_permission: "arrowtorch.use"
+
+# Lore for the torch bow as a single string
+torchbow_lore: "Special Torch Bow"
+
+torchbow_name: "Torch Bow"

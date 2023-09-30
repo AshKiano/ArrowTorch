@@ -1,0 +1,15 @@
+name: ArrowTorch
+version: '1.3'
+main: com.ashkiano.arrowtorch.ArrowTorch
+api-version: '1.16'
+authors: [AshKiano]
+commands:
+  gettorchbow:
+    description: Gets a special torch bow
+    usage: /<command>
+
+# Default permission
+permissions:
+  arrowtorch.use:
+    description: Permission to use the gettorchbow command
+    default: op
