@@ -26,6 +26,9 @@ public class ArrowTorch extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents(new ArrowListener(this), this);
         Metrics metrics = new Metrics(this, 19517);
+
+        this.getLogger().info("Thank you for using the ArrowTorch plugin! If you enjoy using this plugin, please consider making a donation to support the development. You can donate at: https://donate.ashkiano.com");
+
     }
 
     @Override
