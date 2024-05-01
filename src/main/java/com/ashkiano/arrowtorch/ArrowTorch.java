@@ -24,7 +24,11 @@ public class ArrowTorch extends JavaPlugin {
         bowLore = getConfig().getString("torchbow_lore", "Special Torch Bow");
         bowName = getConfig().getString("torchbow_name", "Torch Bow");  // Load bow name from config
 
-        getServer().getPluginManager().registerEvents(new ArrowListener(this), this);
+        if (isWorldGuardEnabled()) {
+            getServer().getPluginManager().registerEvents(new ArrowListenerWorldGuard(this), this);
+        } else {
+            getServer().getPluginManager().registerEvents(new ArrowListener(this), this);
+        }
         Metrics metrics = new Metrics(this, 19517);
 
         this.getLogger().info("Thank you for using the ArrowTorch plugin! If you enjoy using this plugin, please consider making a donation to support the development. You can donate at: https://donate.ashkiano.com");
@@ -60,5 +64,9 @@ public class ArrowTorch extends JavaPlugin {
             }
         }
         return false;
+    }
+
+    private boolean isWorldGuardEnabled() {
+        return getServer().getPluginManager().getPlugin("WorldGuard") != null && getServer().getPluginManager().isPluginEnabled("WorldGuard");
     }
 }

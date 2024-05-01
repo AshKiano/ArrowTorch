@@ -3,6 +3,7 @@ version: '${project.version}'
 main: com.ashkiano.arrowtorch.ArrowTorch
 api-version: '1.16'
 authors: [AshKiano]
+softdepend: [WorldGuard, CoreProtect]
 commands:
   gettorchbow:
     description: Gets a special torch bow

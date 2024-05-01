@@ -12,4 +12,5 @@ com\ashkiano\arrowtorch\Metrics$SingleLineChart.class
 com\ashkiano\arrowtorch\Metrics$SimpleBarChart.class
 com\ashkiano\arrowtorch\Metrics$SimplePie.class
 com\ashkiano\arrowtorch\Metrics$AdvancedBarChart.class
+com\ashkiano\arrowtorch\ArrowListenerWorldGuard.class
 com\ashkiano\arrowtorch\Metrics$JsonObjectBuilder$JsonObject.class
